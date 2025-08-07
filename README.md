@@ -19,3 +19,6 @@ docker build -t testapp .
 docker run -d -p 5050:5050 --name testapp --network mongo-network testapp 
 
 well done now verify the data in the specific port post the data and try to retrive it via mongo express
+
+while running in kubernetes use local host or 127.0.0.1:27017
+check the deployment.yaml file change as required
